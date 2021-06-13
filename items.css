@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
     margin: 0 auto;
     font-family: cursive;
@@ -46,6 +55,9 @@ body {
     font-size: 1em;
     border-radius: 4px;
     transition: all 0.3s linear;
+    position:absolute;
+   bottom:0;
+   width:100%;
   }
   
   .box:hover {
