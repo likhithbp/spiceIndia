@@ -111,6 +111,7 @@ body {
     font-size: 0.7em;
     font-weight: bolder;
     float: right;
+    background-color:rgba(0, 0, 0, 0.5);
   }
   
   .push {
@@ -344,7 +345,7 @@ body {
     height: 5%;
   }
   .card-header{
-    height: 65px;
+    height: 100px;
   }  
   .card-header img {
     width: 100%;
@@ -363,7 +364,7 @@ body {
   .tag {
     background: #cccccc;
     border-radius: 50px;
-    font-size: 80%;
+    font-size: 70%;
     margin: 0;
     color: #fff;
     padding: 2% 3%;
@@ -441,6 +442,10 @@ body {
       width: 7em;
     }
 
+    li {
+      padding-top: 8px;
+    }
+
 }
 
 /***********************************************************************
@@ -487,3 +492,46 @@ body {
     right: 0;
   }
 
+/***********************************************************************
+ *  Button2
+ **********************************************************************/
+
+ .button2 {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 95%;
+  padding: 0.3%;
+  width: 8%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -120%;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 15px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
